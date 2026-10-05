@@ -813,7 +813,11 @@ function Contact() {
       <div className="contact__bottom">
         <span>© {new Date().getFullYear()} Quamar Abrar</span>
         <div>
-          <a href="#contact" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/quamar-abrar-7bb652381?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             LinkedIn
           </a>
           <a
