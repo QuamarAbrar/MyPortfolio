@@ -385,9 +385,6 @@ function Header() {
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a className="availability" href="#contact">
-        <i /> Available for select projects
-      </a>
     </header>
   )
 }
@@ -763,7 +760,22 @@ function About() {
 
 function Contact() {
   const [copied, setCopied] = useState(false)
+  const [connectDocked, setConnectDocked] = useState(false)
+  const contactEndRef = useRef<HTMLSpanElement>(null)
   const email = "hello@quamar.design"
+
+  useEffect(() => {
+    const marker = contactEndRef.current
+    if (!marker) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setConnectDocked(entry.isIntersecting),
+      { rootMargin: "0px 0px -1px 0px" },
+    )
+    observer.observe(marker)
+    return () => observer.disconnect()
+  }, [])
+
   const copyEmail = async () => {
     try {
       await navigator.clipboard.writeText(email)
@@ -775,6 +787,12 @@ function Contact() {
   }
   return (
     <footer className="contact" id="contact">
+      <a
+        className={`connect-button${connectDocked ? " is-docked" : ""}`}
+        href="#contact"
+      >
+        Connect
+      </a>
       <div className="contact__top">
         <span>Have a project in mind?</span>
         <span>Bengaluru / IST</span>
@@ -815,6 +833,11 @@ function Contact() {
         </div>
         <a href="#top">Back to top ↑</a>
       </div>
+      <span
+        ref={contactEndRef}
+        className="contact__end-marker"
+        aria-hidden="true"
+      />
     </footer>
   )
 }
