@@ -796,7 +796,7 @@ function Contact() {
         <span>© {new Date().getFullYear()} Quamar Abrar</span>
         <div>
           <a href="#contact">LinkedIn</a>
-          <a href="#contact">Behance</a>
+          <a href="https://dribbble.com/quamar-abrar">Dribbble</a>
           <a href="#contact">Instagram</a>
         </div>
         <a href="#top">Back to top ↑</a>
