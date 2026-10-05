@@ -795,9 +795,23 @@ function Contact() {
       <div className="contact__bottom">
         <span>© {new Date().getFullYear()} Quamar Abrar</span>
         <div>
-          <a href="#contact">LinkedIn</a>
-          <a href="https://dribbble.com/quamar-abrar">Dribbble</a>
-          <a href="#contact">Instagram</a>
+          <a href="#contact" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+          <a
+            href="https://dribbble.com/quamar-abrar"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Dribbble
+          </a>
+          <a
+            href="https://www.instagram.com/lethargiccaveman/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
         </div>
         <a href="#top">Back to top ↑</a>
       </div>
