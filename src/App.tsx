@@ -466,7 +466,7 @@ function ProjectVisual({ motif, title }: { motif: string; title: string }) {
         <i />
       </div>
       <div className="project-visual__content">
-        <span className="project-visual__kicker">A study in form / 2025</span>
+        <span className="project-visual__kicker">A study in form / 2026</span>
         <strong>{title}</strong>
         <div className="project-visual__shape" />
       </div>
