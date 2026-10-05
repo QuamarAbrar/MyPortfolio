@@ -797,7 +797,7 @@ function Contact() {
         <div>
           <a href="#contact">LinkedIn</a>
           <a href="https://dribbble.com/quamar-abrar">Dribbble</a>
-          <a href="#contact">Instagram</a>
+          <a href="https://www.instagram.com/lethargiccaveman/">Instagram</a>
         </div>
         <a href="#top">Back to top ↑</a>
       </div>
